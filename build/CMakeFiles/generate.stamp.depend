@@ -1,0 +1,26 @@
+# CMake generation dependency list for this directory.
+E:/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake
+E:/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake
+E:/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake
+E:/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake
+E:/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake
+E:/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake
+E:/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake
+E:/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake
+E:/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake
+E:/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+E:/CMake/share/cmake-3.23/Modules/Compiler/MSVC-C.cmake
+E:/CMake/share/cmake-3.23/Modules/Compiler/MSVC-CXX.cmake
+E:/CMake/share/cmake-3.23/Modules/FetchContent.cmake
+E:/CMake/share/cmake-3.23/Modules/FetchContent/CMakeLists.cmake.in
+E:/CMake/share/cmake-3.23/Modules/GoogleTest.cmake
+E:/CMake/share/cmake-3.23/Modules/Platform/Windows-MSVC-C.cmake
+E:/CMake/share/cmake-3.23/Modules/Platform/Windows-MSVC-CXX.cmake
+E:/CMake/share/cmake-3.23/Modules/Platform/Windows-MSVC.cmake
+E:/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake
+E:/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake
+E:/Cpp_TEST/my_json_parser/CMakeLists.txt
+E:/Cpp_TEST/my_json_parser/build/CMakeFiles/3.23.1/CMakeCCompiler.cmake
+E:/Cpp_TEST/my_json_parser/build/CMakeFiles/3.23.1/CMakeCXXCompiler.cmake
+E:/Cpp_TEST/my_json_parser/build/CMakeFiles/3.23.1/CMakeRCCompiler.cmake
+E:/Cpp_TEST/my_json_parser/build/CMakeFiles/3.23.1/CMakeSystem.cmake

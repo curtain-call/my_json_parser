@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+E:/CMake/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake
+E:/CMake/share/cmake-3.23/Modules/CheckIncludeFile.cmake
+E:/CMake/share/cmake-3.23/Modules/CheckLibraryExists.cmake
+E:/CMake/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake
+E:/CMake/share/cmake-3.23/Modules/FindPackageMessage.cmake
+E:/CMake/share/cmake-3.23/Modules/FindThreads.cmake
+E:/Cpp_TEST/my_json_parser/build/_deps/googletest-src/googlemock/CMakeLists.txt
+E:/Cpp_TEST/my_json_parser/build/_deps/googletest-src/googlemock/cmake/gmock.pc.in
+E:/Cpp_TEST/my_json_parser/build/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in

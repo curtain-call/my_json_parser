@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5E00D702-7279-38D3-88BA-975C3CCBD64C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Cpp_TEST\my_json_parser\build\CMakeFiles\c90b257060d2bfe9684282c17b9ae1fe\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+E:\CMake\bin\cmake.exe -SE:/Cpp_TEST/my_json_parser -BE:/Cpp_TEST/my_json_parser/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Cpp_TEST/my_json_parser/build/my_json_parser.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\CMake\share\cmake-3.23\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;E:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeDependentOption.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;E:\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;E:\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;E:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.23\Modules\FetchContent.cmake;E:\CMake\share\cmake-3.23\Modules\FetchContent\CMakeLists.cmake.in;E:\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;E:\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;E:\CMake\share\cmake-3.23\Modules\FindPython.cmake;E:\CMake\share\cmake-3.23\Modules\FindPython\Support.cmake;E:\CMake\share\cmake-3.23\Modules\FindThreads.cmake;E:\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;E:\CMake\share\cmake-3.23\Modules\GoogleTest.cmake;E:\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake;E:\Cpp_TEST\my_json_parser\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeCCompiler.cmake;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeCXXCompiler.cmake;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeRCCompiler.cmake;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeSystem.cmake;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googlemock\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googlemock\cmake\gmock.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googlemock\cmake\gmock_main.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\Config.cmake.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\gtest.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\gtest_main.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\internal_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Cpp_TEST\my_json_parser\build\CMakeFiles\generate.stamp;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-build\CMakeFiles\generate.stamp;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-build\googlemock\CMakeFiles\generate.stamp;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-build\googletest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+E:\CMake\bin\cmake.exe -SE:/Cpp_TEST/my_json_parser -BE:/Cpp_TEST/my_json_parser/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Cpp_TEST/my_json_parser/build/my_json_parser.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\CMake\share\cmake-3.23\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;E:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeDependentOption.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;E:\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;E:\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;E:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.23\Modules\FetchContent.cmake;E:\CMake\share\cmake-3.23\Modules\FetchContent\CMakeLists.cmake.in;E:\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;E:\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;E:\CMake\share\cmake-3.23\Modules\FindPython.cmake;E:\CMake\share\cmake-3.23\Modules\FindPython\Support.cmake;E:\CMake\share\cmake-3.23\Modules\FindThreads.cmake;E:\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;E:\CMake\share\cmake-3.23\Modules\GoogleTest.cmake;E:\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake;E:\Cpp_TEST\my_json_parser\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeCCompiler.cmake;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeCXXCompiler.cmake;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeRCCompiler.cmake;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeSystem.cmake;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googlemock\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googlemock\cmake\gmock.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googlemock\cmake\gmock_main.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\Config.cmake.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\gtest.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\gtest_main.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\internal_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\Cpp_TEST\my_json_parser\build\CMakeFiles\generate.stamp;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-build\CMakeFiles\generate.stamp;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-build\googlemock\CMakeFiles\generate.stamp;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-build\googletest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+E:\CMake\bin\cmake.exe -SE:/Cpp_TEST/my_json_parser -BE:/Cpp_TEST/my_json_parser/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Cpp_TEST/my_json_parser/build/my_json_parser.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\CMake\share\cmake-3.23\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;E:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeDependentOption.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;E:\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;E:\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;E:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.23\Modules\FetchContent.cmake;E:\CMake\share\cmake-3.23\Modules\FetchContent\CMakeLists.cmake.in;E:\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;E:\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;E:\CMake\share\cmake-3.23\Modules\FindPython.cmake;E:\CMake\share\cmake-3.23\Modules\FindPython\Support.cmake;E:\CMake\share\cmake-3.23\Modules\FindThreads.cmake;E:\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;E:\CMake\share\cmake-3.23\Modules\GoogleTest.cmake;E:\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake;E:\Cpp_TEST\my_json_parser\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeCCompiler.cmake;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeCXXCompiler.cmake;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeRCCompiler.cmake;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeSystem.cmake;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googlemock\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googlemock\cmake\gmock.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googlemock\cmake\gmock_main.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\Config.cmake.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\gtest.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\gtest_main.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\internal_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\Cpp_TEST\my_json_parser\build\CMakeFiles\generate.stamp;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-build\CMakeFiles\generate.stamp;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-build\googlemock\CMakeFiles\generate.stamp;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-build\googletest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+E:\CMake\bin\cmake.exe -SE:/Cpp_TEST/my_json_parser -BE:/Cpp_TEST/my_json_parser/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Cpp_TEST/my_json_parser/build/my_json_parser.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\CMake\share\cmake-3.23\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;E:\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeDependentOption.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;E:\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;E:\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;E:\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.23\Modules\FetchContent.cmake;E:\CMake\share\cmake-3.23\Modules\FetchContent\CMakeLists.cmake.in;E:\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;E:\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;E:\CMake\share\cmake-3.23\Modules\FindPython.cmake;E:\CMake\share\cmake-3.23\Modules\FindPython\Support.cmake;E:\CMake\share\cmake-3.23\Modules\FindThreads.cmake;E:\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;E:\CMake\share\cmake-3.23\Modules\GoogleTest.cmake;E:\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake;E:\Cpp_TEST\my_json_parser\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeCCompiler.cmake;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeCXXCompiler.cmake;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeRCCompiler.cmake;E:\Cpp_TEST\my_json_parser\build\CMakeFiles\3.23.1\CMakeSystem.cmake;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googlemock\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googlemock\cmake\gmock.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googlemock\cmake\gmock_main.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\CMakeLists.txt;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\Config.cmake.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\gtest.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\gtest_main.pc.in;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-src\googletest\cmake\internal_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\Cpp_TEST\my_json_parser\build\CMakeFiles\generate.stamp;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-build\CMakeFiles\generate.stamp;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-build\googlemock\CMakeFiles\generate.stamp;E:\Cpp_TEST\my_json_parser\build\_deps\googletest-build\googletest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

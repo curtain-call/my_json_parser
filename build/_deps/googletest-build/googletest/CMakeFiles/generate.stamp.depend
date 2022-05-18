@@ -1,0 +1,18 @@
+# CMake generation dependency list for this directory.
+E:/CMake/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+E:/CMake/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake
+E:/CMake/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake
+E:/CMake/share/cmake-3.23/Modules/CheckIncludeFile.cmake
+E:/CMake/share/cmake-3.23/Modules/CheckLibraryExists.cmake
+E:/CMake/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake
+E:/CMake/share/cmake-3.23/Modules/FindPackageMessage.cmake
+E:/CMake/share/cmake-3.23/Modules/FindPython.cmake
+E:/CMake/share/cmake-3.23/Modules/FindPython/Support.cmake
+E:/CMake/share/cmake-3.23/Modules/FindThreads.cmake
+E:/CMake/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake
+E:/CMake/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake
+E:/Cpp_TEST/my_json_parser/build/_deps/googletest-src/googletest/CMakeLists.txt
+E:/Cpp_TEST/my_json_parser/build/_deps/googletest-src/googletest/cmake/Config.cmake.in
+E:/Cpp_TEST/my_json_parser/build/_deps/googletest-src/googletest/cmake/gtest.pc.in
+E:/Cpp_TEST/my_json_parser/build/_deps/googletest-src/googletest/cmake/gtest_main.pc.in
+E:/Cpp_TEST/my_json_parser/build/_deps/googletest-src/googletest/cmake/internal_utils.cmake

@@ -1,0 +1,5 @@
+if(EXISTS "E:/Cpp_TEST/my_json_parser/build/parser_test[1]_tests.cmake")
+  include("E:/Cpp_TEST/my_json_parser/build/parser_test[1]_tests.cmake")
+else()
+  add_test(parser_test_NOT_BUILT parser_test_NOT_BUILT)
+endif()

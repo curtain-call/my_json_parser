@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Cpp_TEST\my_json_parser\build\_deps\googletest-subbuild\CMakeFiles\dde4312c6ae51d1c7147d89b692d87aa\googletest-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Cpp_TEST\my_json_parser\build\_deps\googletest-subbuild\CMakeFiles\dde4312c6ae51d1c7147d89b692d87aa\googletest-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Cpp_TEST\my_json_parser\build\_deps\googletest-subbuild\CMakeFiles\dde4312c6ae51d1c7147d89b692d87aa\googletest-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Cpp_TEST\my_json_parser\build\_deps\googletest-subbuild\CMakeFiles\dde4312c6ae51d1c7147d89b692d87aa\googletest-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Cpp_TEST\my_json_parser\build\_deps\googletest-subbuild\CMakeFiles\dde4312c6ae51d1c7147d89b692d87aa\googletest-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Cpp_TEST\my_json_parser\build\_deps\googletest-subbuild\CMakeFiles\dde4312c6ae51d1c7147d89b692d87aa\googletest-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Cpp_TEST\my_json_parser\build\_deps\googletest-subbuild\CMakeFiles\dde4312c6ae51d1c7147d89b692d87aa\googletest-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Cpp_TEST\my_json_parser\build\_deps\googletest-subbuild\CMakeFiles\dde4312c6ae51d1c7147d89b692d87aa\googletest-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Cpp_TEST\my_json_parser\build\_deps\googletest-subbuild\CMakeFiles\bacdecd372b0e7c43110c0fc152e16f7\googletest-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Cpp_TEST\my_json_parser\build\_deps\googletest-subbuild\CMakeFiles\37110426bc0eb0dd09d9bb7fae595529\googletest-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Cpp_TEST\my_json_parser\build\_deps\googletest-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\Cpp_TEST\my_json_parser\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DA248CA7-4AE3-386A-A2C9-9CB8E6C3E237}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

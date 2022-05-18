@@ -1,0 +1,1 @@
+E:/VS/installer/Common7/IDE/VC/VCTargets

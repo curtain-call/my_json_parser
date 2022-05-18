@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Cpp_TEST\my_json_parser\build\CMakeFiles\5588de9b0e7006deeb3b2b41b1a57f9d\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D8652571-EC88-34FE-9521-EF05AED10C88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

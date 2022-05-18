@@ -1,0 +1,3 @@
+﻿  Building Custom Rule E:/Cpp_TEST/my_json_parser/build/_deps/googletest-src/googletest/CMakeLists.txt
+  gtest_main.cc
+  gtest_main.vcxproj -> E:\Cpp_TEST\my_json_parser\build\lib\Debug\gtest_maind.lib

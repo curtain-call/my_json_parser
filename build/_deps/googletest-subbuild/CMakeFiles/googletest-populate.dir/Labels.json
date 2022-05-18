@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "E:/Cpp_TEST/my_json_parser/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+		},
+		{
+			"file" : "E:/Cpp_TEST/my_json_parser/build/_deps/googletest-subbuild/CMakeFiles/37110426bc0eb0dd09d9bb7fae595529/googletest-populate.rule"
+		},
+		{
+			"file" : "E:/Cpp_TEST/my_json_parser/build/_deps/googletest-subbuild/CMakeFiles/bacdecd372b0e7c43110c0fc152e16f7/googletest-populate-complete.rule"
+		},
+		{
+			"file" : "E:/Cpp_TEST/my_json_parser/build/_deps/googletest-subbuild/CMakeFiles/dde4312c6ae51d1c7147d89b692d87aa/googletest-populate-build.rule"
+		},
+		{
+			"file" : "E:/Cpp_TEST/my_json_parser/build/_deps/googletest-subbuild/CMakeFiles/dde4312c6ae51d1c7147d89b692d87aa/googletest-populate-configure.rule"
+		},
+		{
+			"file" : "E:/Cpp_TEST/my_json_parser/build/_deps/googletest-subbuild/CMakeFiles/dde4312c6ae51d1c7147d89b692d87aa/googletest-populate-download.rule"
+		},
+		{
+			"file" : "E:/Cpp_TEST/my_json_parser/build/_deps/googletest-subbuild/CMakeFiles/dde4312c6ae51d1c7147d89b692d87aa/googletest-populate-install.rule"
+		},
+		{
+			"file" : "E:/Cpp_TEST/my_json_parser/build/_deps/googletest-subbuild/CMakeFiles/dde4312c6ae51d1c7147d89b692d87aa/googletest-populate-mkdir.rule"
+		},
+		{
+			"file" : "E:/Cpp_TEST/my_json_parser/build/_deps/googletest-subbuild/CMakeFiles/dde4312c6ae51d1c7147d89b692d87aa/googletest-populate-patch.rule"
+		},
+		{
+			"file" : "E:/Cpp_TEST/my_json_parser/build/_deps/googletest-subbuild/CMakeFiles/dde4312c6ae51d1c7147d89b692d87aa/googletest-populate-test.rule"
+		},
+		{
+			"file" : "E:/Cpp_TEST/my_json_parser/build/_deps/googletest-subbuild/CMakeFiles/dde4312c6ae51d1c7147d89b692d87aa/googletest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest-populate"
+		],
+		"name" : "googletest-populate"
+	}
+}

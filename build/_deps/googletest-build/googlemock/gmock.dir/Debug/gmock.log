@@ -1,0 +1,5 @@
+﻿  Building Custom Rule E:/Cpp_TEST/my_json_parser/build/_deps/googletest-src/googlemock/CMakeLists.txt
+  gtest-all.cc
+  gmock-all.cc
+  正在生成代码...
+  gmock.vcxproj -> E:\Cpp_TEST\my_json_parser\build\lib\Debug\gmockd.lib
