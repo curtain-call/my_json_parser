@@ -1,7 +1,7 @@
 # my_json_parser
 
-2021.5.18  通过了第一个测试，完成了null，true，false解析
-2021.5.20  完成了number，string解析
+- 2021.5.18  通过了第一个测试，完成了null，true，false解析
+- 2021.5.20  完成了number，string解析
 
 # 目录结构
 
