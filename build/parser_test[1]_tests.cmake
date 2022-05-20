@@ -1,1 +1,5 @@
-set(  parser_test_TESTS)
+add_test([=[parser.nulltest]=]  E:/Cpp_TEST/my_json_parser/build/Debug/parser_test.exe [==[--gtest_filter=parser.nulltest]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[parser.nulltest]=]  PROPERTIES WORKING_DIRECTORY E:/Cpp_TEST/my_json_parser/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[parser.numbertest]=]  E:/Cpp_TEST/my_json_parser/build/Debug/parser_test.exe [==[--gtest_filter=parser.numbertest]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[parser.numbertest]=]  PROPERTIES WORKING_DIRECTORY E:/Cpp_TEST/my_json_parser/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  parser_test_TESTS parser.nulltest parser.numbertest)
