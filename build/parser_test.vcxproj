@@ -353,6 +353,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="E:\Cpp_TEST\my_json_parser\src\include\praser_lite.h" />
     <ClCompile Include="E:\Cpp_TEST\my_json_parser\build\test.cpp" />
     <ClInclude Include="E:\Cpp_TEST\my_json_parser\src\j_context.h" />
+    <ClCompile Include="E:\Cpp_TEST\my_json_parser\src\j_context.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="E:\Cpp_TEST\my_json_parser\build\ZERO_CHECK.vcxproj">

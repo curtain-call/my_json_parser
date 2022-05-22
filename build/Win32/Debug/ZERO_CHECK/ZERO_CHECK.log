@@ -1,1 +1,9 @@
 ﻿  Checking Build System
+  CMake is re-running because E:/Cpp_TEST/my_json_parser/build/CMakeFiles/generate.stamp is out-of-date.
+    the file 'E:/Cpp_TEST/my_json_parser/CMakeLists.txt'
+    is newer than 'E:/Cpp_TEST/my_json_parser/build/CMakeFiles/generate.stamp.depend'
+    result='-1'
+  -- Selecting Windows SDK version 10.0.17763.0 to target Windows 10.0.19044.
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: E:/Cpp_TEST/my_json_parser/build

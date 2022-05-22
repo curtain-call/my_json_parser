@@ -16,7 +16,7 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(parser_test "src/praser_lite.cpp" "src/include/praser_lite.h" "test.cpp" "src/j_context.h")
+add_executable(parser_test "src/praser_lite.cpp" "src/include/praser_lite.h" "test.cpp" "src/j_context.h" "src/j_context.cpp")
 
 target_link_libraries(
   parser_test
