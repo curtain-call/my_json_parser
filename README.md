@@ -1,11 +1,8 @@
 # my_json_parser
-
-2021.5.18  完成null，true，false解析，通过literalTest
-2021.5.20  完成number，string解析，通过stringTest
-2021.5.22  完成array解析
-
-- 2021.5.18  通过了第一个测试，完成了null，true，false解析
-- 2021.5.20  完成了number，string解析
+## log
+- 2021.5.18  完成null，true，false解析，通过literalTest
+- 2021.5.20  完成number，string解析，通过stringTest
+- 2021.5.22  完成array解析
 
 
 # 目录结构
