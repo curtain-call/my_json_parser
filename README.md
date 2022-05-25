@@ -1,6 +1,5 @@
 # my_json_parser
-
-
+## log
 - 2021.5.18  完成null，true，false解析，通过literalTest
 - 2021.5.20  完成number，string解析，通过stringTest
 - 2021.5.22  完成array解析
@@ -23,4 +22,3 @@
   - parser_lite.cpp      解析器实现
   - j_context.cpp        缓冲区栈结构实现
 - CMakeLists：项目根设置，可修改配置文件
-
