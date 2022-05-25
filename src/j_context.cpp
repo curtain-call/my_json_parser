@@ -1,6 +1,6 @@
 #include"j_context.h"
 #include<cassert>
-
+#include<cstdlib>
 void * j_context_push(j_context * pack, size_t size)
 {
 	void* ret;

@@ -1,2 +1,4 @@
-﻿  test.cpp
+﻿  praser_lite.cpp
+E:\Cpp_TEST\my_json_parser\src\praser_lite.cpp(292): warning C4129: “/”: 不可识别的字符转义序列
+e:\cpp_test\my_json_parser\src\praser_lite.cpp(398): warning C4700: 使用了未初始化的局部变量“temp”
   parser_test.vcxproj -> E:\Cpp_TEST\my_json_parser\build\Debug\parser_test.exe

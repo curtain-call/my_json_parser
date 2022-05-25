@@ -1,13 +1,11 @@
 # my_json_parser
 
-<<<<<<< HEAD
-2021.5.18  完成null，true，false解析，通过literalTest
-2021.5.20  完成number，string解析，通过stringTest
-2021.5.22  完成array解析
-=======
-- 2021.5.18  通过了第一个测试，完成了null，true，false解析
-- 2021.5.20  完成了number，string解析
->>>>>>> 0c54d0a54b085bbd11e3d52a085ec13607c1c2e0
+
+- 2021.5.18  完成null，true，false解析，通过literalTest
+- 2021.5.20  完成number，string解析，通过stringTest
+- 2021.5.22  完成array解析
+- 2021.5.25  完成object解析
+
 
 # 目录结构
 
@@ -21,10 +19,8 @@
     - parser_lite.h      解析器实现头文件
     - file_operation.h   文件操作
     - j_context.h        解析文本需要的数据结构和内容
+    - j_member.h         对象成员的存储结构
   - parser_lite.cpp      解析器实现
-<<<<<<< HEAD
   - j_context.cpp        缓冲区栈结构实现
 - CMakeLists：项目根设置，可修改配置文件
-=======
-- CMakeLists：项目根设置，可修改配置文件
->>>>>>> 0c54d0a54b085bbd11e3d52a085ec13607c1c2e0
+

@@ -42,21 +42,44 @@ void J_VALUE::j_set_string(const char * s, size_t len)
 	this->type = j_string;
 	this->len = len;
 	this->s = new char[len + 1];
-	memcpy(this->s, s, len);
+	::memcpy(this->s, s, len);
 	this->s[len] = '\0';
 }
 
 size_t J_VALUE::j_get_array_size()
 {
 	assert(this != nullptr&&this->type == j_array);
-	return this->capacity;
+	return this->capacityARR;
 }
 
 J_VALUE * J_VALUE::j_get_arr_element(size_t index) const
 {
 	assert(this != nullptr&&this->type == j_array);
-	assert(index < this->capacity);
+	assert(index < this->capacityARR);
 	return &this->e[index];
+}
+
+size_t J_VALUE::j_get_object_size() const
+{
+	assert(this != nullptr&&this->type == j_object);
+	return this->capacityOBJ;
+}
+
+const char * J_VALUE::j_get_objeci_key(size_t index) const
+{
+	assert(this != nullptr&&this->type == j_object);
+	assert(index < this->capacityOBJ);
+	return nullptr;
+}
+
+size_t J_VALUE::j_get_object_key_length(size_t index) const
+{
+	return size_t();
+}
+
+J_VALUE * J_VALUE::j_get_object_value() const
+{
+	return nullptr;
 }
 
 int J_VALUE::j_get_boolean(){
@@ -129,6 +152,8 @@ get_condition j_parse_v(J_VALUE *v, j_context * pack)
 		return j_parse_string(v, pack);
 	case'[':
 		return j_parse_array(v, pack);
+	case'{':
+		return j_parse_object(v, pack);
 	default:
 		return j_parse_number(v, pack);
 	}
@@ -145,10 +170,16 @@ void node_free(J_VALUE* v)
 		delete v->s;
 		break;
 	case j_array:
-		for (size_t i = 0; i < v->capacity; i++)
+		for (size_t i = 0; i < v->capacityARR; i++)
 			node_free(&v->e[i]);
-		delete[] v->e;
-		// 递归释放
+		delete[] v->e;		// 递归释放
+	case j_object:
+		for (size_t i = 0; i < v->capacityOBJ; i++) {
+			delete[] v->m->key;
+			node_free(v->m->v);
+		}
+		delete v->m;
+		break;
 	default:
 		break;
 	}
@@ -225,8 +256,19 @@ inline void put(j_context* pack, char ch) {
 }
 get_condition j_parse_string(J_VALUE *v, j_context * pack)
 {
-	// 解析值
-	size_t head = pack->top, len;
+	char* str;
+	size_t len;
+	get_condition ret;
+	if ((ret = j_parse_string_mem(pack, &str, &len)) == J_PARSE_OK) {
+		v->j_set_string(str, len);
+	}
+	return ret;
+
+}
+
+get_condition j_parse_string_mem(j_context * pack, char **str, size_t * len)
+{
+	size_t head = pack->top;
 	const char *p = pack->json;
 	if (p[0] == '"') {
 		p++;
@@ -234,20 +276,20 @@ get_condition j_parse_string(J_VALUE *v, j_context * pack)
 			char ch = *p++;
 			switch (ch)
 			{
-			// 1.结束标志
+				// 1.结束标志
 			case'"':
-				len = pack->top - head;  // head中存者top的原始值
-				v->j_set_string((const char*)j_context_pop(pack, len), len);
+				*len = pack->top - head;  // head中存者top的原始值
+				*str = (char*)j_context_pop(pack, *len);
 				// 将pop出的字符串放进节点v
 				pack->json = p;
 				// 将已读取的从context中去掉
 				return J_PARSE_OK;
-			// 2.出现转义符  转义符合并进第一个字符
+				// 2.出现转义符  转义符合并进第一个字符
 			case'\\':
 				switch (*p++) {
 				case'"': put(pack, '\"'); break;
 				case'\\':put(pack, '\\'); break;
-				case'/': put(pack, '/' ); break;
+				case'/': put(pack, '\/'); break;
 				case'b': put(pack, '\b'); break;
 				case'f': put(pack, '\f'); break;
 				case'n': put(pack, '\n'); break;
@@ -258,10 +300,10 @@ get_condition j_parse_string(J_VALUE *v, j_context * pack)
 					// 非法转义值处理
 				}
 				break;
-			// 3.丢失后引号
+				// 3.丢失后引号
 			case'\0':pack->top = head;
 				return J_LOSE_MARK;
-			// 4.一般字符
+				// 4.一般字符
 			default:
 				if (ch < 0x20) {
 					pack->top = head;
@@ -269,13 +311,9 @@ get_condition j_parse_string(J_VALUE *v, j_context * pack)
 				}
 				put(pack, ch);
 			}
+		}
 	}
-	}
-
-	// 存储字符串
-
 	return J_PARSE_OK;
-	// 在字符串看来，栈缓冲只能起到预防非法输入打乱数据结构的作用
 }
 
 get_condition j_parse_array(J_VALUE *v, j_context * pack)
@@ -291,7 +329,7 @@ get_condition j_parse_array(J_VALUE *v, j_context * pack)
 			//空数组不需要分配内存，因为它没有叶子节点
 			pack->json++;
 			v->e = nullptr;
-			v->capacity = 0;
+			v->capacityARR = 0;
 			v->type = j_array;
 			return J_PARSE_OK;
 		}
@@ -303,7 +341,7 @@ get_condition j_parse_array(J_VALUE *v, j_context * pack)
 			// 递归，深度优先
 			if (ret != J_PARSE_OK)
 				break;
-			memcpy(j_context_push(pack, sizeof(J_VALUE)), &e, sizeof(J_VALUE));
+			::memcpy(j_context_push(pack, sizeof(J_VALUE)), &e, sizeof(J_VALUE));
 			//memcpy会重新申请内存空间，所以压对象栈的时候直接使用临时节点
 			elmtExt++;
 			j_parse_ws(pack);
@@ -316,10 +354,10 @@ get_condition j_parse_array(J_VALUE *v, j_context * pack)
 				pack->json++;
 				size_t size = elmtExt * sizeof(J_VALUE);
 				v->type = j_array;
-				v->capacity = elmtExt;
+				v->capacityARR = elmtExt;
 				v->e = new J_VALUE[elmtExt];
 				// 释放在node_free当中，注意delete[]
-				memcpy(v->e, j_context_pop(pack, size), size);
+				::memcpy(v->e, j_context_pop(pack, size), size);
 				return J_PARSE_OK;
 			}
 			else {
@@ -335,6 +373,86 @@ get_condition j_parse_array(J_VALUE *v, j_context * pack)
 			return ret;
 	}
 	return get_condition();
+}
+
+get_condition j_parse_object(J_VALUE *v, j_context *pack)
+{
+	get_condition ret;	// 为了处理错误退出的堆栈内存，必须在最后统一返回
+	J_MEMBER temp;		// 不进堆，不分内存
+	size_t size = 0;	// 临时计数member个数
+	assert(pack->json[0] == '{');
+	pack->json++;
+	j_parse_ws(pack);
+	if (pack->json[0] == '}') {
+		v->type = j_object;
+		v->capacityOBJ = 0;
+		v->m = nullptr;
+		return J_PARSE_OK;
+	}
+
+	temp.key = nullptr;
+	size = 0;
+
+	for (;;) {
+		char *str;
+		node_free(temp.v);
+
+		if (pack->json[0] != '"') {
+			ret = J_MISS_KEY;
+			break;
+			// 直接return是不好的，因为还有栈的内存可能导致泄漏的情况
+		}
+		// 解析键
+		if ((ret = j_parse_string_mem(pack, &str, &temp.k_len)) == J_PARSE_OK)
+			break;
+		::memcpy(temp.key = new char[temp.k_len + 1], str, temp.k_len);
+		temp.key[temp.k_len] = '\0';
+		//解析冒号
+		j_parse_ws(pack);
+		if (pack->json[0] != ':') {
+			ret = J_LOSE_MARK;
+			break;
+		}
+		pack->json++;
+		j_parse_ws(pack);
+		//解析值
+		if ((ret = j_parse_v(temp.v, pack)) != J_PARSE_OK) {
+			break;
+		}
+		// 临时成员压栈
+		::memcpy(j_context_push(pack, sizeof(J_MEMBER)), &temp, sizeof(J_MEMBER));
+		size++;
+		//清空临时成员
+		temp.key = nullptr;		// memcpy()是浅拷贝，所以临时成员的key被分配的内存仍旧在被使用，储存着这个地址的值被重新压栈
+		j_parse_ws(pack);
+		if (pack->json[0] == ',') {
+			// 继续
+			pack->json++;
+			j_parse_ws(pack);
+		}
+		else if (pack->json[0] == '}') {
+			// 结束
+			pack->json++;
+			v->type = j_object;
+			v->capacityOBJ = size;
+			::memcpy(v->m = new J_MEMBER[size],(J_MEMBER*)j_context_pop(pack, sizeof(J_MEMBER)*size),sizeof(J_MEMBER)*size);
+			return J_PARSE_OK;
+		}
+		else {
+			ret = J_LOSE_MARK;
+			break;
+		}
+	}
+
+	delete[] temp.key;	//如果有的话要删掉
+	for (size_t i = 0; i < size; i++) {
+		// 错误退出的时候还没有设置capacityOBJ，数据也都在堆栈里
+		J_MEMBER* temp2 = (J_MEMBER*)j_context_pop(pack, sizeof(J_MEMBER));
+		delete[] temp2->key;	// 删键
+		node_free(temp2->v);	// 删值
+	}
+	v->type = j_null;
+	return ret;
 }
 
 
